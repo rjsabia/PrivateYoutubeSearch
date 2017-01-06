@@ -25,17 +25,20 @@ function getSearchResults(searchData){
     	// my actual key
     	key: 'AIzaSyCH-N0-ck_N-Xwk1_1p7pinYHVD3rDvwQg',
     	
-    	q: searchTerm,
+    	q: searchData,
   		
   		r: 'json'
   };
   
-    url = 'https://www.googleapis.com/youtube/v3/search';
+  url = 'https://www.googleapis.com/youtube/v3/search';
 
   $.getJSON(url, params, function(data){
-    showResults(data.items); //<-- There is no `data.Search`
+    
+    console.log(data);
+   
   }); 
 }
 
-}
+
+
 
