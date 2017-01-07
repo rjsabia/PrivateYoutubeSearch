@@ -8,7 +8,7 @@ $(function(){
 		var searchData = $('#search-data').val();
 
 		// This is where I will call the query function
-		console.log(searchData);
+		// console.log(searchData);
 
 		getSearchResults(searchData);
 		// clears search text from form
@@ -22,21 +22,36 @@ function getSearchResults(searchData){
 	var params = {
     
     	part: 'snippet',
+
+      maxResults: 10,
     	// my actual key
     	key: 'AIzaSyCH-N0-ck_N-Xwk1_1p7pinYHVD3rDvwQg',
     	
-    	q: searchData,
+    	q: searchData
   		
-  		r: 'json'
   };
   
   url = 'https://www.googleapis.com/youtube/v3/search';
 
   $.getJSON(url, params, function(data){
     
-    console.log(data);
+    // console.log(data);
+
+    resultVideos(data.items);
    
   }); 
+}
+
+function resultVideos(videos){
+
+  $.each(videos, function(index,value){
+    
+    $('#output').append('<li><a href="https://www.youtube.com/watch?v=' + value.id.videoId + '"><img src="' + value.snippet.thumbnails.default.url + '"></a></li>');
+    
+    console.log(value);
+
+  });
+
 }
 
 
