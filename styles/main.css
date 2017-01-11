@@ -1,0 +1,64 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+
+	background-color: black;
+	color: white;
+	font-family: Roboto, arial, sans-serif;
+}
+
+span{
+
+	color: #cc181e;
+	font-weight: 700;
+	text-shadow: 2px 2px #881014;
+}
+
+header{
+
+	clip-path: polygon(
+	   
+	    0 0, /* left top */
+	    100% 0, /* right top */ 
+	    100% 100%, /* right bottom */
+	    0 75% /* left bottom */
+  	);
+}
+
+#banner-head{
+
+	background-color: #323232;
+	height: 150px;
+	width: 100%;
+	padding: 25px 0px 0px 30px;
+}
+
+h1, span{
+
+	font-size: 50px;
+}
+
+#slogan-prompt{
+
+	margin-top: 10px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+#output-container{
+
+	min-height: 500px;
+}
+
+footer{
+
+	background-color: #323232;
+	font-size: 15px;
+	font-weight: 600;
+	height: 100px;
+	width: 100%;
+	padding: 30px 20px 0px 20px;
+}
+
