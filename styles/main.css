@@ -47,9 +47,50 @@ h1, span{
 	font-weight: 600;
 }
 
+#search-form{
+
+	margin-left: 30px;
+}
+
+#search-data{
+	
+	border-style: none;
+	outline: none;
+	width: 300px;
+	height: 30px;
+	font-size: 20px;
+	border: 2px solid #cc181e;
+	background-color: #666666;
+	color: white;
+	vertical-align: bottom;
+	border-radius: 3px;
+}
+
+#search-button{
+
+	outline: none;
+	width: 100px;
+	height: 30px;
+	color: white;
+	background-color: #cc181e;
+	border: none; 
+	margin-left: 10px;
+	font-size: 20px;
+	border-radius: 4px;
+	border: 2px solid #a31318;
+}
+
+#search-button:hover{
+
+	border: 2px solid white;
+	color: #e5e5e5;
+	font-size: 19px;
+}
+
 #output-container{
 
-	min-height: 500px;
+	min-height: 350px;
+	margin: 20px 30px 0px 30px;
 }
 
 footer{

@@ -23,7 +23,7 @@ function getSearchResults(searchData){
     
     	part: 'snippet',
 
-      maxResults: 10,
+      maxResults: 12,
     	// my actual key
     	key: 'AIzaSyCH-N0-ck_N-Xwk1_1p7pinYHVD3rDvwQg',
     	
