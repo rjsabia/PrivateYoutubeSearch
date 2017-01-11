@@ -1,3 +1,6 @@
+$('#banner-head').click(function() {
+    location.reload();
+});
 
 $(function(){
 
@@ -36,6 +39,7 @@ function getSearchResults(searchData){
   $.getJSON(url, params, function(data){
     
     // console.log(data);
+    $('#output').empty();
 
     resultVideos(data.items);
    
@@ -46,7 +50,7 @@ function resultVideos(videos){
 
   $.each(videos, function(index,value){
     
-    $('#output').append('<li><a href="https://www.youtube.com/watch?v=' + value.id.videoId + '"><img src="' + value.snippet.thumbnails.default.url + '"></a></li>');
+    $('#output').append('<li><a href="https://www.youtube.com/watch?v=' + value.id.videoId + '"><img src="' + value.snippet.thumbnails.medium.url + '"></a></li>');
     
     console.log(value);
 

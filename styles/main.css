@@ -33,6 +33,7 @@ header{
 	height: 150px;
 	width: 100%;
 	padding: 25px 0px 0px 30px;
+	cursor: pointer;
 }
 
 h1, span{
@@ -70,11 +71,11 @@ h1, span{
 
 	outline: none;
 	width: 100px;
-	height: 30px;
+	height: 30.5px;
 	color: white;
 	background-color: #cc181e;
 	border: none; 
-	margin-left: 10px;
+	margin-left: 8px;
 	font-size: 20px;
 	border-radius: 4px;
 	border: 2px solid #a31318;
@@ -85,12 +86,28 @@ h1, span{
 	border: 2px solid white;
 	color: #e5e5e5;
 	font-size: 19px;
+	cursor: pointer;
 }
 
 #output-container{
 
 	min-height: 350px;
 	margin: 20px 30px 0px 30px;
+}
+
+#output li{
+
+	display: inline-block;
+	margin: 0px 10px 10px 0px;
+	border: 3px solid #cc181e;
+	border-radius: 3px;
+	padding: 8px;
+}
+
+#output li:hover{
+
+	border: 2px solid #e5e5e5;
+	cursor: pointer;
 }
 
 footer{
